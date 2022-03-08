@@ -1,4 +1,4 @@
-# cmux: Connection Mux ![Travis Build Status](https://api.travis-ci.org/soheilhy/args.svg?branch=master "Travis Build Status") [![GoDoc](https://godoc.org/github.com/soheilhy/cmux?status.svg)](http://godoc.org/github.com/soheilhy/cmux)
+# cmux: Connection Mux ![Travis Build Status](https://api.travis-ci.org/soheilhy/args.svg?branch=master "Travis Build Status") [![GoDoc](https://godoc.org/github.com/exaring/cmux?status.svg)](http://godoc.org/github.com/exaring/cmux)
 
 cmux is a generic Go library to multiplex connections based on
 their payload. Using cmux, you can serve gRPC, SSH, HTTPS, HTTP,
@@ -43,10 +43,10 @@ go trpcS.Accept(trpcL)
 m.Serve()
 ```
 
-Take a look at [other examples in the GoDoc](http://godoc.org/github.com/soheilhy/cmux/#pkg-examples).
+Take a look at [other examples in the GoDoc](http://godoc.org/github.com/exaring/cmux/#pkg-examples).
 
 ## Docs
-* [GoDocs](https://godoc.org/github.com/soheilhy/cmux)
+* [GoDocs](https://godoc.org/github.com/exaring/cmux)
 
 ## Performance
 There is room for improvment but, since we are only matching
@@ -78,6 +78,6 @@ grpcl := m.MatchWithWriters(cmux.HTTP2MatchHeaderFieldSendSettings("content-type
 # Copyright and License
 Copyright 2016 The CMux Authors. All rights reserved.
 
-See [CONTRIBUTORS](https://github.com/soheilhy/cmux/blob/master/CONTRIBUTORS)
+See [CONTRIBUTORS](https://github.com/exaring/cmux/blob/master/CONTRIBUTORS)
 for the CMux Authors. Code is released under
-[the Apache 2 license](https://github.com/soheilhy/cmux/blob/master/LICENSE).
+[the Apache 2 license](https://github.com/exaring/cmux/blob/master/LICENSE).

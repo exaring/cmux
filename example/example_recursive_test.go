@@ -24,14 +24,14 @@ import (
 	"net/rpc"
 	"strings"
 
-	"github.com/soheilhy/cmux"
+	"github.com/exaring/cmux"
 )
 
 type recursiveHTTPHandler struct{}
 
 func (h *recursiveHTTPHandler) ServeHTTP(w http.ResponseWriter,
-	r *http.Request) {
-
+	r *http.Request,
+) {
 	fmt.Fprintf(w, "example http response")
 }
 
